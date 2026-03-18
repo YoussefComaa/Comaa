@@ -35,21 +35,20 @@
 
 :root {
 	
-	/* Neon green */
-	--main-color: rgb(57,255,20);
-	--main-color-rgb:57,255,20;
+	--main-color: rgb(34,197,94);
+	--main-color-rgb:34,197,94;
 	
-	/* Deep green */
-	--color-two: rgb(22,163,74);
-	--color-two-rgb:22,163,74;
+	--color-two: rgb(21,128,61);
+	--color-two-rgb:21,128,61;
 	
-	/* Very dark green */
-	--color-three: rgb(5,46,22);
-	--color-three-rgb:5,46,22;
+	--color-three: rgb(5,20,10);
+	--color-three-rgb:5,20,10;
 	
-	/* Near black */
-	--color-four: rgb(2,4,2);
-	--color-four-rgb:2,4,2;
+	--color-four: rgb(5,9,8);
+	--color-four-rgb:5,9,8;
+
+	--accent-color: rgb(245,240,230);
+	--accent-color-rgb:245,240,230;
 
 	--white-color:rgb(255,255,255);
 	--white-color-rgb:255,255,255;
