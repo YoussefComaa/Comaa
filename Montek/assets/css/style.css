@@ -1508,3 +1508,34 @@ a.backtop:hover {
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling behavior for the whole page */
 }
+/* Cream accent overrides */
+.sec-title_heading {
+	color: rgb(245,240,230);
+}
+.counter-block_one-counter {
+	color: rgb(245,240,230);
+}
+.counter-block_one-text {
+	color: rgba(245,240,230,0.6);
+}
+.banner-one_heading {
+	color: rgb(245,240,230);
+}
+.banner-one_text,
+.banner-one_text-two {
+	color: rgba(245,240,230,0.7);
+	font-size: 22px;
+}
+.service-block_one-heading {
+	color: rgb(245,240,230);
+}
+.awards-block_one-title {
+	color: rgb(245,240,230);
+}
+.journal-block_one-heading a {
+	color: rgb(245,240,230);
+}
+.footer-text,
+.footer_copyright {
+	color: rgba(245,240,230,0.5);
+}
