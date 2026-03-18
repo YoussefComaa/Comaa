@@ -35,30 +35,25 @@
 
 :root {
 	
-	/* #ba024a in decimal RGB */
-	--main-color: rgb(186,2,74);
-	--main-color-rgb:186,2,74;
+	/* Neon green */
+	--main-color: rgb(57,255,20);
+	--main-color-rgb:57,255,20;
 	
-	/* #540045 in decimal RGB */
-	--color-two: rgb(84,0,69);
-	--color-two-rgb:84,0,69;
+	/* Deep green */
+	--color-two: rgb(22,163,74);
+	--color-two-rgb:22,163,74;
 	
-	/* #120c12 in decimal RGB */
-	--color-three: rgb(18,12,18);
-	--color-three-rgb:18,12,18;
+	/* Very dark green */
+	--color-three: rgb(5,46,22);
+	--color-three-rgb:5,46,22;
 	
-	/* #0f0f0f in decimal RGB */
-	--color-four: rgb(15,15,15);
-	--color-four-rgb:15,15,15;
-	
+	/* Near black */
+	--color-four: rgb(2,4,2);
+	--color-four-rgb:2,4,2;
 
-
-
-    /* #ffffff in decimal RGB */
 	--white-color:rgb(255,255,255);
 	--white-color-rgb:255,255,255;
 
-	/* #000000 in decimal RGB */
 	--black-color:rgb(0,0,0);
 	--black-color-rgb:0,0,0;
 
