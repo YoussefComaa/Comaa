@@ -7414,5 +7414,14 @@ button.animate-btn::after,
     padding: 0px 15px 30px;
   }
 }
+.logo-img {
+  height: 40px;
+  width: auto;
+  transition: 0.3s;
+}
+
+.logo-img:hover {
+  opacity: 0.8;
+}
 
 /*# sourceMappingURL=styles.css.map */
