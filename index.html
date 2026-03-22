@@ -461,15 +461,15 @@
         <div class="row">
             <div class="col-lg-5">
                 <div class="col-left mb-lg-0">
-                    <div class="COMAA-video">
-                        <video autoplay muted loop playsinline preload="auto">
-                            <source src="./assets/images/video/corridor.mp4" type="video/mp4">
-                            <source src="./assets/images/video/corridor.webm" type="video/webm">
-                        </video>
-                        <div class="overlay v1"></div>
-                        <div class="overlay mark-1"></div>
-                        <div class="overlay mark-2"></div>
+                    <div style="display:flex; justify-content:center; align-items:center; height:400px;">
+                        <img src="assets/images/logo/COMAA-logo.png" alt="Comaa Logo" style="width:300px; height:300px; object-fit:contain; animation:rotateLogo 8s linear infinite;">
                     </div>
+                        <style>
+                            @keyframes rotateLogo {
+                                0% { transform: rotateX(0deg); }
+                                100% { transform: rotateX(360deg); }
+                                }
+                        </style>
                     <div class="signature">
                         <img loading="lazy" width="111" height="40" src="assets/images/logo/COMAA-small.svg" alt="Image">
                     </div>
