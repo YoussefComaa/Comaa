@@ -184,11 +184,24 @@
         .gs-submit {
             cursor: pointer;
             font-family: inherit;
+            height: 48px;
+            padding-left: 32px;
+            padding-right: 32px;
+            background: transparent;
+            color: #00ff88;
+            border: 1px solid rgba(0,255,136,0.4);
+            transition: border-color 0.25s, background 0.25s, color 0.25s;
+        }
+
+        .gs-submit:hover {
+            background: rgba(0,255,136,0.08);
+            border-color: #00ff88;
+            color: #00ff88;
         }
 
         .gs-note {
             font-size: 12px;
-            color: rgba(255,255,255,0.85);
+            color: rgba(255,255,255,0.4);
             margin-top: 16px;
         }
 
@@ -373,7 +386,7 @@
                                 </div>
 
                                 <div style="margin-top: 36px;">
-                                    <button type="submit" class="gs-submit tf-btn style-fill animate-btn animate-dark">
+                                    <button type="submit" class="gs-submit">
                                         SUBMIT & BOOK A CALL
                                         <i class="icon icon-arrow-long-right"></i>
                                     </button>
