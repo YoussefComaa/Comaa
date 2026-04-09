@@ -1,0 +1,83 @@
+<svg width="424" height="530" viewBox="0 0 424 530" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="424" height="530" fill="#080808"/>
+
+  <!-- Grid dots -->
+  <pattern id="dots2" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.06)"/>
+  </pattern>
+  <rect width="424" height="530" fill="url(#dots2)"/>
+
+  <!-- Outer glow -->
+  <ellipse cx="212" cy="255" rx="150" ry="150" fill="rgba(0,255,136,0.04)"/>
+
+  <!-- Connection lines from outer nodes to center -->
+  <line x1="80" y1="130" x2="212" y2="255" stroke="rgba(0,255,136,0.25)" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="344" y1="130" x2="212" y2="255" stroke="rgba(0,255,136,0.25)" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="60" y1="290" x2="212" y2="255" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="364" y1="290" x2="212" y2="255" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="120" y1="400" x2="212" y2="255" stroke="rgba(0,255,136,0.15)" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="304" y1="400" x2="212" y2="255" stroke="rgba(0,255,136,0.15)" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="212" y1="96" x2="212" y2="255" stroke="rgba(0,255,136,0.25)" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Central hub -->
+  <circle cx="212" cy="255" r="52" fill="#0a0a0a" stroke="#00ff88" stroke-width="1.5"/>
+  <circle cx="212" cy="255" r="52" fill="rgba(0,255,136,0.05)"/>
+  <circle cx="212" cy="255" r="36" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+
+  <!-- Target/crosshair in center -->
+  <line x1="192" y1="255" x2="200" y2="255" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="224" y1="255" x2="232" y2="255" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="212" y1="235" x2="212" y2="243" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="212" y1="267" x2="212" y2="275" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="212" cy="255" r="10" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <circle cx="212" cy="255" r="3" fill="#00ff88"/>
+
+  <!-- Outer node 1 - top center -->
+  <circle cx="212" cy="96" r="22" fill="#0f0f0f" stroke="rgba(0,255,136,0.5)" stroke-width="1.5"/>
+  <circle cx="212" cy="91" r="7" fill="rgba(0,255,136,0.2)" stroke="#00ff88" stroke-width="1"/>
+  <path d="M200,108 Q212,102 224,108" fill="none" stroke="#00ff88" stroke-width="1"/>
+
+  <!-- Outer node 2 - top left -->
+  <circle cx="80" cy="130" r="22" fill="#0f0f0f" stroke="rgba(0,255,136,0.5)" stroke-width="1.5"/>
+  <circle cx="80" cy="125" r="7" fill="rgba(0,255,136,0.2)" stroke="#00ff88" stroke-width="1"/>
+  <path d="M68,142 Q80,136 92,142" fill="none" stroke="#00ff88" stroke-width="1"/>
+
+  <!-- Outer node 3 - top right -->
+  <circle cx="344" cy="130" r="22" fill="#0f0f0f" stroke="rgba(0,255,136,0.5)" stroke-width="1.5"/>
+  <circle cx="344" cy="125" r="7" fill="rgba(0,255,136,0.2)" stroke="#00ff88" stroke-width="1"/>
+  <path d="M332,142 Q344,136 356,142" fill="none" stroke="#00ff88" stroke-width="1"/>
+
+  <!-- Outer node 4 - left -->
+  <circle cx="60" cy="290" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.35)" stroke-width="1"/>
+  <circle cx="60" cy="286" r="5" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.6)" stroke-width="1"/>
+  <path d="M51,297 Q60,293 69,297" fill="none" stroke="rgba(0,255,136,0.7)" stroke-width="1"/>
+
+  <!-- Outer node 5 - right -->
+  <circle cx="364" cy="290" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.35)" stroke-width="1"/>
+  <circle cx="364" cy="286" r="5" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.6)" stroke-width="1"/>
+  <path d="M355,297 Q364,293 373,297" fill="none" stroke="rgba(0,255,136,0.7)" stroke-width="1"/>
+
+  <!-- Outer node 6 - bottom left -->
+  <circle cx="120" cy="400" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
+  <circle cx="120" cy="396" r="5" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
+  <path d="M111,407 Q120,403 129,407" fill="none" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
+
+  <!-- Outer node 7 - bottom right -->
+  <circle cx="304" cy="400" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
+  <circle cx="304" cy="396" r="5" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
+  <path d="M295,407 Q304,403 313,407" fill="none" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
+
+  <!-- Pulse rings on center -->
+  <circle cx="212" cy="255" r="68" fill="none" stroke="rgba(0,255,136,0.08)" stroke-width="1"/>
+  <circle cx="212" cy="255" r="84" fill="none" stroke="rgba(0,255,136,0.05)" stroke-width="1"/>
+
+  <!-- Stats floating -->
+  <rect x="148" y="440" width="128" height="26" rx="4" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.2)" stroke-width="1"/>
+  <text x="212" y="458" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle" letter-spacing="2">SCALE</text>
+
+  <!-- Small dots on lines (animated feel) -->
+  <circle cx="146" cy="192" r="3" fill="#00ff88" opacity="0.7"/>
+  <circle cx="278" cy="192" r="3" fill="#00ff88" opacity="0.7"/>
+  <circle cx="136" cy="227" r="2" fill="#00ff88" opacity="0.4"/>
+  <circle cx="288" cy="227" r="2" fill="#00ff88" opacity="0.4"/>
+</svg>

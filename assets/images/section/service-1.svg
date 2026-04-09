@@ -1,0 +1,71 @@
+<svg width="424" height="530" viewBox="0 0 424 530" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="424" height="530" fill="#080808"/>
+
+  <!-- Grid dots -->
+  <pattern id="dots1" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.06)"/>
+  </pattern>
+  <rect width="424" height="530" fill="url(#dots1)"/>
+
+  <!-- Glow -->
+  <ellipse cx="212" cy="265" rx="160" ry="160" fill="rgba(0,255,136,0.04)"/>
+  <ellipse cx="212" cy="265" rx="90" ry="90" fill="rgba(0,255,136,0.06)"/>
+
+  <!-- Envelope body -->
+  <rect x="82" y="180" width="260" height="175" rx="6" fill="#0f0f0f" stroke="#00ff88" stroke-width="1.5"/>
+
+  <!-- Envelope flap lines (V shape) -->
+  <polyline points="82,180 212,275 342,180" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+
+  <!-- Envelope bottom fold lines -->
+  <line x1="82" y1="355" x2="162" y2="280" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+  <line x1="342" y1="355" x2="262" y2="280" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+
+  <!-- Glow on envelope -->
+  <rect x="82" y="180" width="260" height="175" rx="6" fill="none" stroke="rgba(0,255,136,0.15)" stroke-width="12"/>
+
+  <!-- Profile card 1 - top left -->
+  <rect x="44" y="108" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
+  <circle cx="64" cy="130" r="10" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
+  <line x1="82" y1="126" x2="118" y2="126" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="82" y1="133" x2="108" y2="133" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="64" cy="130" r="4" fill="#00ff88"/>
+  <!-- Connecting line to envelope -->
+  <line x1="134" y1="136" x2="152" y2="185" stroke="rgba(0,255,136,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Profile card 2 - top right -->
+  <rect x="290" y="95" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
+  <circle cx="310" cy="117" r="10" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
+  <line x1="328" y1="113" x2="364" y2="113" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="328" y1="120" x2="354" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="310" cy="117" r="4" fill="#00ff88"/>
+  <!-- Connecting line to envelope -->
+  <line x1="290" y1="123" x2="272" y2="185" stroke="rgba(0,255,136,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Profile card 3 - bottom left -->
+  <rect x="30" y="370" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
+  <circle cx="50" cy="392" r="10" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
+  <line x1="68" y1="388" x2="104" y2="388" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="68" y1="395" x2="94" y2="395" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="50" cy="392" r="4" fill="rgba(0,255,136,0.6)"/>
+  <line x1="120" y1="370" x2="145" y2="355" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Profile card 4 - bottom right -->
+  <rect x="304" y="370" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
+  <circle cx="324" cy="392" r="10" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
+  <line x1="342" y1="388" x2="378" y2="388" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="342" y1="395" x2="368" y2="395" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="324" cy="392" r="4" fill="rgba(0,255,136,0.6)"/>
+  <line x1="304" y1="370" x2="279" y2="355" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- @ symbol inside envelope -->
+  <text x="212" y="285" font-family="monospace" font-size="36" fill="#00ff88" text-anchor="middle" opacity="0.9">@</text>
+
+  <!-- Checkmark badge -->
+  <circle cx="310" cy="185" r="14" fill="#080808" stroke="#00ff88" stroke-width="1.5"/>
+  <polyline points="303,185 308,191 318,179" fill="none" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Label -->
+  <rect x="132" y="456" width="160" height="28" rx="4" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.2)" stroke-width="1"/>
+  <text x="212" y="475" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle" letter-spacing="2">PERSONALIZED</text>
+</svg>
