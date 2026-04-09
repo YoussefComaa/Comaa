@@ -1,140 +1,137 @@
 <svg width="424" height="530" viewBox="0 0 424 530" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @keyframes blink  { 0%,100%{opacity:1} 50%{opacity:0.12} }
-      @keyframes ring   { 0%,100%{opacity:0.2} 50%{opacity:0.55} }
-      .pulse-dot  { animation: blink 1.4s ease-in-out infinite; }
-      .pulse-ring { animation: ring  1.4s ease-in-out infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.15} }
+      @keyframes glow  { 0%,100%{opacity:0.25} 50%{opacity:0.6} }
+      .live-dot  { animation: blink 1.6s ease-in-out infinite; }
+      .live-ring { animation: glow  1.6s ease-in-out infinite; }
     </style>
     <pattern id="g2" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0L0 0 0 32" fill="none" stroke="rgba(255,255,255,0.022)" stroke-width="0.5"/>
+      <path d="M32 0L0 0 0 32" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="0.5"/>
     </pattern>
+    <linearGradient id="ob1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="rgba(0,255,102,0.25)"/>
+    </linearGradient>
+    <linearGradient id="ob2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="rgba(0,255,102,0.2)"/>
+    </linearGradient>
+    <linearGradient id="ob3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,255,102,0.5)"/>
+      <stop offset="100%" stop-color="rgba(0,255,102,0.08)"/>
+    </linearGradient>
   </defs>
 
   <!-- Background -->
   <rect width="424" height="530" fill="#080808"/>
   <rect width="424" height="530" fill="url(#g2)"/>
+
+  <!-- Top accent -->
   <rect x="0" y="0" width="424" height="2" fill="#00ff66"/>
 
-  <!-- HEADER -->
+  <!-- ── HEADER ── -->
   <rect x="0" y="2" width="424" height="60" fill="#0c0c0c"/>
   <rect x="0" y="61" width="424" height="1" fill="rgba(0,255,102,0.1)"/>
-  <rect x="18" y="14" width="30" height="30" rx="6" fill="rgba(0,255,102,0.06)" stroke="rgba(0,255,102,0.28)" stroke-width="1"/>
+
+  <!-- Logo mark -->
+  <rect x="18" y="14" width="30" height="30" rx="6" fill="rgba(0,255,102,0.06)" stroke="rgba(0,255,102,0.3)" stroke-width="1"/>
   <text x="33" y="34" font-family="monospace" font-size="13" fill="#00ff66" text-anchor="middle" font-weight="700">C</text>
-  <text x="58" y="30" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.88)" letter-spacing="2.5" font-weight="700">CAMPAIGN PULSE</text>
+
+  <!-- Title -->
+  <text x="58" y="30" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.88)" letter-spacing="2.5" font-weight="700">OUTREACH ENGINE</text>
   <text x="58" y="46" font-family="monospace" font-size="6" fill="rgba(0,255,102,0.45)" letter-spacing="1.5">COMAA PLATFORM</text>
-  <circle cx="390" cy="25" r="10" fill="rgba(0,255,102,0.08)" class="pulse-ring"/>
-  <circle cx="390" cy="25" r="4" fill="#00ff66" class="pulse-dot"/>
+
+  <!-- Live indicator -->
+  <circle cx="390" cy="25" r="10" fill="rgba(0,255,102,0.08)" class="live-ring"/>
+  <circle cx="390" cy="25" r="4" fill="#00ff66" class="live-dot"/>
   <text x="390" y="43" font-family="monospace" font-size="5.5" fill="rgba(0,255,102,0.55)" text-anchor="middle" letter-spacing="1">LIVE</text>
 
-  <!-- CAMPAIGN LABEL -->
-  <rect x="18" y="70" width="388" height="34" rx="5" fill="#0e0e0e" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-  <text x="30" y="82" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.28)" letter-spacing="1.2">ACTIVE CAMPAIGN</text>
-  <text x="30" y="97" font-family="-apple-system,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.85)" font-weight="600">SaaS Founders Q2 Outreach</text>
-  <rect x="314" y="76" width="84" height="16" rx="4" fill="rgba(0,255,102,0.12)" stroke="rgba(0,255,102,0.4)" stroke-width="0.8"/>
-  <circle cx="325" cy="84" r="3" fill="#00ff66" class="pulse-dot"/>
-  <text x="362" y="88" font-family="monospace" font-size="6.5" fill="#00ff66" text-anchor="middle" letter-spacing="1">SENDING</text>
+  <!-- ── STATS BAR ── -->
+  <rect x="18" y="72" width="388" height="50" rx="5" fill="#0e0e0e" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="82" y="91" font-family="monospace" font-size="17" fill="#ffffff" font-weight="700" text-anchor="middle">2,847</text>
+  <text x="82" y="108" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1.5">EMAILS SENT</text>
+  <line x1="152" y1="80" x2="152" y2="112" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="212" y="91" font-family="monospace" font-size="17" fill="#00ff66" font-weight="700" text-anchor="middle">43%</text>
+  <text x="212" y="108" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1.5">OPEN RATE</text>
+  <line x1="272" y1="80" x2="272" y2="112" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="340" y="91" font-family="monospace" font-size="17" fill="#00ff66" font-weight="700" text-anchor="middle">19%</text>
+  <text x="340" y="108" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1.5">REPLY RATE</text>
 
-  <!-- STATS -->
-  <rect x="18" y="114" width="388" height="58" rx="5" fill="#0e0e0e" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-  <text x="82" y="137" font-family="monospace" font-size="20" fill="#ffffff" font-weight="700" text-anchor="middle">2,847</text>
-  <text x="82" y="154" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.28)" text-anchor="middle" letter-spacing="1.5">EMAILS SENT</text>
-  <line x1="152" y1="124" x2="152" y2="162" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-  <text x="212" y="137" font-family="monospace" font-size="20" fill="#00ff66" font-weight="700" text-anchor="middle">43%</text>
-  <text x="212" y="154" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.28)" text-anchor="middle" letter-spacing="1.5">OPEN RATE</text>
-  <line x1="272" y1="124" x2="272" y2="162" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-  <text x="340" y="137" font-family="monospace" font-size="20" fill="#00ff66" font-weight="700" text-anchor="middle">19%</text>
-  <text x="340" y="154" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.28)" text-anchor="middle" letter-spacing="1.5">REPLY RATE</text>
+  <!-- ── EMAIL CARD 1 — REPLIED ── -->
+  <rect x="18" y="134" width="388" height="114" rx="6" fill="#0e0e0e" stroke="rgba(0,255,102,0.22)" stroke-width="1"/>
+  <rect x="18" y="134" width="3" height="114" rx="3 0 0 3" fill="#00ff66"/>
 
-  <!-- LIVE SEND LOG -->
-  <rect x="18" y="182" width="388" height="198" rx="5" fill="#0b0b0b" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-  <rect x="18" y="182" width="388" height="24" rx="5 5 0 0" fill="#111"/>
-  <circle cx="30" cy="194" r="3" fill="#00ff66" class="pulse-dot"/>
-  <text x="40" y="198" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.55)" letter-spacing="1.5">LIVE SEND LOG</text>
-  <text x="398" y="198" font-family="monospace" font-size="6" fill="rgba(0,255,102,0.4)" text-anchor="end" letter-spacing="1">AUTO-REFRESH</text>
-  <line x1="18" y1="206" x2="406" y2="206" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <!-- Sender avatar -->
+  <circle cx="60" cy="188" r="22" fill="rgba(0,255,102,0.07)" stroke="rgba(0,255,102,0.25)" stroke-width="1.5"/>
+  <text x="60" y="193" font-family="monospace" font-size="12" fill="#00ff66" text-anchor="middle" font-weight="700">JH</text>
 
-  <!-- Col headers -->
-  <text x="30" y="220" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.2)" letter-spacing="1">TIME</text>
-  <text x="90" y="220" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.2)" letter-spacing="1">RECIPIENT</text>
-  <text x="288" y="220" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.2)" letter-spacing="1">STATUS</text>
-  <line x1="26" y1="224" x2="398" y2="224" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Subject / recipient -->
+  <text x="93" y="155" font-family="-apple-system,sans-serif" font-size="11" fill="rgba(255,255,255,0.92)" font-weight="600">Quick question about your pipeline</text>
+  <text x="93" y="169" font-family="-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">To: j.hawkins@nexuscorp.io · 2 min ago</text>
 
-  <!-- Row 1 — OPENED -->
-  <circle cx="30" cy="237" r="3" fill="#00ff66"/>
-  <text x="40" y="241" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">14:23:07</text>
-  <text x="90" y="241" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.62)">j.hawkins@nexuscorp.io</text>
-  <rect x="284" y="232" width="48" height="12" rx="3" fill="rgba(0,255,102,0.12)" stroke="rgba(0,255,102,0.3)" stroke-width="0.6"/>
-  <text x="308" y="241.5" font-family="monospace" font-size="6" fill="#00ff66" text-anchor="middle">OPENED</text>
-  <line x1="26" y1="250" x2="398" y2="250" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+  <!-- Badges -->
+  <rect x="93" y="177" width="47" height="13" rx="3" fill="rgba(0,255,102,0.18)" stroke="rgba(0,255,102,0.55)" stroke-width="0.8"/>
+  <text x="116.5" y="186.5" font-family="monospace" font-size="6" fill="#00ff66" text-anchor="middle" letter-spacing="0.5">REPLIED</text>
+  <rect x="147" y="177" width="46" height="13" rx="3" fill="rgba(0,255,102,0.09)" stroke="rgba(0,255,102,0.3)" stroke-width="0.8"/>
+  <text x="170" y="186.5" font-family="monospace" font-size="6" fill="#00ff66" text-anchor="middle" letter-spacing="0.5">STEP 1 / 5</text>
 
-  <!-- Row 2 — REPLIED -->
-  <circle cx="30" cy="262" r="3" fill="#00ff66"/>
-  <text x="40" y="266" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">14:22:51</text>
-  <text x="90" y="266" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.62)">s.chen@orionlabs.co</text>
-  <rect x="284" y="257" width="48" height="12" rx="3" fill="rgba(0,255,102,0.18)" stroke="rgba(0,255,102,0.45)" stroke-width="0.6"/>
-  <text x="308" y="266.5" font-family="monospace" font-size="6" fill="#00ff66" text-anchor="middle">REPLIED</text>
-  <line x1="26" y1="275" x2="398" y2="275" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+  <!-- Open bar -->
+  <text x="93" y="208" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.28)" letter-spacing="1.2">ENGAGEMENT</text>
+  <rect x="93" y="212" width="204" height="5" rx="2.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="93" y="212" width="185" height="5" rx="2.5" fill="url(#ob1)"/>
+  <text x="306" y="218" font-family="monospace" font-size="8" fill="#00ff66" font-weight="700">91%</text>
 
-  <!-- Row 3 — SENT -->
-  <circle cx="30" cy="287" r="3" fill="rgba(255,255,255,0.25)"/>
-  <text x="40" y="291" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.22)">14:22:44</text>
-  <text x="90" y="291" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.45)">m.driel@apexdigital.io</text>
-  <rect x="284" y="282" width="36" height="12" rx="3" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.6"/>
-  <text x="302" y="291.5" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.32)" text-anchor="middle">SENT</text>
-  <line x1="26" y1="300" x2="398" y2="300" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <!-- Preview text -->
+  <rect x="93" y="224" width="296" height="13" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <text x="100" y="233.5" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.28)">"Thanks for reaching out — happy to connect this week..."</text>
 
-  <!-- Row 4 — OPENED -->
-  <circle cx="30" cy="312" r="3" fill="#00ff66"/>
-  <text x="40" y="316" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">14:22:38</text>
-  <text x="90" y="316" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)">r.foster@peakvault.com</text>
-  <rect x="284" y="307" width="48" height="12" rx="3" fill="rgba(0,255,102,0.09)" stroke="rgba(0,255,102,0.25)" stroke-width="0.6"/>
-  <text x="308" y="316.5" font-family="monospace" font-size="6" fill="rgba(0,255,102,0.75)" text-anchor="middle">OPENED</text>
-  <line x1="26" y1="325" x2="398" y2="325" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <!-- ── EMAIL CARD 2 — OPENED ── -->
+  <rect x="18" y="259" width="388" height="114" rx="6" fill="#0e0e0e" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="18" y="259" width="3" height="114" rx="3 0 0 3" fill="rgba(0,255,102,0.55)"/>
 
-  <!-- Row 5 — SENT (faded) -->
-  <circle cx="30" cy="337" r="3" fill="rgba(255,255,255,0.15)"/>
-  <text x="40" y="341" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.16)">14:22:29</text>
-  <text x="90" y="341" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)">a.kim@stackforge.dev</text>
-  <rect x="284" y="332" width="36" height="12" rx="3" fill="rgba(255,255,255,0.025)"/>
-  <text x="302" y="341.5" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.2)" text-anchor="middle">SENT</text>
-  <line x1="26" y1="350" x2="398" y2="350" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <circle cx="60" cy="313" r="22" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+  <text x="60" y="318" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-weight="700">SC</text>
 
-  <!-- Row 6 — very faded -->
-  <circle cx="30" cy="362" r="3" fill="rgba(255,255,255,0.07)"/>
-  <text x="40" y="366" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.1)">14:22:11</text>
-  <text x="90" y="366" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">t.walsh@lumenarc.io</text>
-  <rect x="284" y="357" width="36" height="12" rx="3" fill="rgba(255,255,255,0.015)"/>
-  <text x="302" y="366.5" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.12)" text-anchor="middle">SENT</text>
+  <text x="93" y="280" font-family="-apple-system,sans-serif" font-size="11" fill="rgba(255,255,255,0.88)" font-weight="600">Following up on my last email</text>
+  <text x="93" y="294" font-family="-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.38)">To: s.chen@orionlabs.co · 8 min ago</text>
 
-  <!-- EMAIL PREVIEW CARD -->
-  <rect x="18" y="390" width="388" height="120" rx="5" fill="#0e0e0e" stroke="rgba(0,255,102,0.14)" stroke-width="1"/>
-  <rect x="18" y="390" width="388" height="22" rx="5 5 0 0" fill="#111"/>
-  <text x="30" y="405" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.3)" letter-spacing="1.2">NEXT EMAIL PREVIEW</text>
-  <line x1="18" y1="412" x2="406" y2="412" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="93" y="302" width="45" height="13" rx="3" fill="rgba(0,255,102,0.09)" stroke="rgba(0,255,102,0.3)" stroke-width="0.8"/>
+  <text x="115.5" y="311.5" font-family="monospace" font-size="6" fill="#00ff66" text-anchor="middle" letter-spacing="0.5">OPENED</text>
+  <rect x="144" y="302" width="46" height="13" rx="3" fill="rgba(0,255,102,0.06)" stroke="rgba(0,255,102,0.2)" stroke-width="0.8"/>
+  <text x="167" y="311.5" font-family="monospace" font-size="6" fill="rgba(0,255,102,0.7)" text-anchor="middle" letter-spacing="0.5">STEP 2 / 5</text>
 
-  <text x="30" y="427" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.25)">FROM:</text>
-  <text x="76" y="427" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.55)">Comaa Outreach &lt;send@comaa.io&gt;</text>
+  <text x="93" y="333" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.25)" letter-spacing="1.2">ENGAGEMENT</text>
+  <rect x="93" y="337" width="204" height="5" rx="2.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="93" y="337" width="143" height="5" rx="2.5" fill="url(#ob2)"/>
+  <text x="306" y="343" font-family="monospace" font-size="8" fill="#00ff66" font-weight="700">70%</text>
 
-  <text x="30" y="442" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.25)">TO:</text>
-  <text x="76" y="442" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.55)">n.patel@growthstack.io</text>
+  <rect x="93" y="349" width="296" height="13" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <text x="100" y="358.5" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.25)">"Just wanted to circle back on this — let me know if..."</text>
 
-  <line x1="26" y1="449" x2="398" y2="449" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- ── EMAIL CARD 3 — SENT ── -->
+  <rect x="18" y="384" width="388" height="114" rx="6" fill="#0e0e0e" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="18" y="384" width="3" height="114" rx="3 0 0 3" fill="rgba(0,255,102,0.22)"/>
 
-  <text x="30" y="463" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.28)">SUBJECT:</text>
-  <text x="96" y="463" font-family="-apple-system,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.78)">Quick question about </text>
-  <rect x="252" y="455" width="60" height="11" rx="2" fill="rgba(0,255,102,0.12)"/>
-  <text x="282" y="463.5" font-family="monospace" font-size="6.5" fill="#00ff66" text-anchor="middle">{company}</text>
+  <circle cx="60" cy="438" r="22" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+  <text x="60" y="443" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.38)" text-anchor="middle" font-weight="700">MD</text>
 
-  <line x1="26" y1="469" x2="398" y2="469" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="93" y="405" font-family="-apple-system,sans-serif" font-size="11" fill="rgba(255,255,255,0.78)" font-weight="600">One last thing about Apex Digital</text>
+  <text x="93" y="419" font-family="-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.32)">To: m.driel@apexdigital.io · 14 min ago</text>
 
-  <text x="30" y="482" font-family="-apple-system,sans-serif" font-size="7" fill="rgba(255,255,255,0.3)">Hi</text>
-  <rect x="44" y="474" width="50" height="11" rx="2" fill="rgba(0,255,102,0.1)"/>
-  <text x="69" y="482.5" font-family="monospace" font-size="6.5" fill="#00ff66" text-anchor="middle">{first_name}</text>
-  <text x="98" y="482" font-family="-apple-system,sans-serif" font-size="7" fill="rgba(255,255,255,0.3)">, I came across your work and wanted to reach out...</text>
+  <rect x="93" y="427" width="33" height="13" rx="3" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="0.8"/>
+  <text x="109.5" y="436.5" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.38)" text-anchor="middle" letter-spacing="0.5">SENT</text>
+  <rect x="132" y="427" width="46" height="13" rx="3" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="0.8"/>
+  <text x="155" y="436.5" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.28)" text-anchor="middle" letter-spacing="0.5">STEP 3 / 5</text>
 
-  <text x="30" y="498" font-family="-apple-system,sans-serif" font-size="7" fill="rgba(255,255,255,0.16)">We help companies like yours book qualified meetings at scale.</text>
+  <text x="93" y="458" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.22)" letter-spacing="1.2">ENGAGEMENT</text>
+  <rect x="93" y="462" width="204" height="5" rx="2.5" fill="rgba(255,255,255,0.05)"/>
+  <rect x="93" y="462" width="92" height="5" rx="2.5" fill="url(#ob3)"/>
+  <text x="306" y="468" font-family="monospace" font-size="8" fill="rgba(0,255,102,0.65)" font-weight="700">45%</text>
 
-  <!-- Footer -->
-  <text x="212" y="522" font-family="monospace" font-size="5.5" fill="rgba(0,255,102,0.2)" text-anchor="middle" letter-spacing="2.5">COMAA CAMPAIGN ENGINE</text>
+  <rect x="93" y="474" width="296" height="13" rx="3" fill="rgba(255,255,255,0.025)"/>
+  <text x="100" y="483.5" font-family="monospace" font-size="5.5" fill="rgba(255,255,255,0.22)">"Hi Marcus, wanted to share something relevant to you..."</text>
+
+  <!-- Footer label -->
+  <text x="212" y="522" font-family="monospace" font-size="5.5" fill="rgba(0,255,102,0.2)" text-anchor="middle" letter-spacing="2.5">COMAA OUTREACH ENGINE</text>
 </svg>
