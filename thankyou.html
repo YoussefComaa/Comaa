@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Book Your Call — Comaa</title>
+    <meta name="author" content="comaa.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex">
+
+    <!-- font -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/COMAA-logo.png" type="image/png">
+    <link rel="icon" href="assets/images/logo/COMAA-logo.png" type="image/png">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ty-wrap {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 20px 80px;
+        }
+
+        .ty-inner {
+            max-width: 640px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .ty-check {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(0, 255, 136, 0.12);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+        }
+
+        .ty-check svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .ty-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #00ff88;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .ty-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 600;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .ty-desc {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+
+        .ty-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 500px) {
+            .ty-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ty-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 28px 24px;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: border-color 0.25s, background 0.25s;
+        }
+
+        .ty-btn:hover {
+            border-color: #00ff88;
+            text-decoration: none;
+        }
+
+        .ty-btn.primary {
+            background: #00ff88;
+            border-color: #00ff88;
+        }
+
+        .ty-btn.primary:hover {
+            background: rgba(0, 255, 136, 0.85);
+        }
+
+        .ty-btn.primary .btn-icon,
+        .ty-btn.primary .btn-title,
+        .ty-btn.primary .btn-sub {
+            color: #000;
+        }
+
+        .ty-btn.secondary {
+            background: transparent;
+        }
+
+        .ty-btn.secondary .btn-icon,
+        .ty-btn.secondary .btn-title,
+        .ty-btn.secondary .btn-sub {
+            color: #fff;
+        }
+
+        .ty-btn.secondary:hover .btn-title {
+            color: #00ff88;
+        }
+
+        .btn-icon {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .btn-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-sub {
+            font-size: 11px;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+
+        .ty-back {
+            margin-top: 40px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.35);
+            letter-spacing: 1px;
+        }
+
+        .ty-back a {
+            color: rgba(255,255,255,0.35);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            transition: color 0.2s;
+        }
+
+        .ty-back a:hover {
+            color: #00ff88;
+        }
+    </style>
+</head>
+
+<body class="counter-scroll">
+
+    <!-- Header -->
+    <header class="tf-header">
+        <div class="header-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-1">
+                        <a href="index.html" class="logo-site">
+                            <img src="assets/images/logo/COMAA-logo.png" style="height:40px;">
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-start">
+                        <a href="index.html" class="link text-caption" style="padding-top:4px;">← BACK TO SITE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <div class="ty-wrap">
+        <div class="ty-inner">
+
+            <!-- Check icon -->
+            <div class="ty-check">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L19 7" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <span class="ty-label">Submission received</span>
+
+            <h1 class="ty-title">
+                Now pick your<br>call type<span class="text-primary">_</span>
+            </h1>
+
+            <p class="ty-desc">
+                We've got your details. Choose how you'd like to connect and book a time that works for you — we'll be ready.
+            </p>
+
+            <!-- Booking options -->
+            <div class="ty-options">
+
+                <a href="https://calendly.com/youssef-comaa/30min" target="_blank" class="ty-btn primary">
+                    <span class="btn-icon">
+                        <i class="icon icon-phone" style="font-size:20px;"></i>
+                    </span>
+                    <span class="btn-title">Phone Call</span>
+                    <span class="btn-sub">30 minutes</span>
+                </a>
+
+                <a href="https://calendly.com/youssef-comaa/30-minute-meeting-clone" target="_blank" class="ty-btn secondary">
+                    <span class="btn-icon">
+                        <i class="icon icon-monitor" style="font-size:20px;"></i>
+                    </span>
+                    <span class="btn-title">Video Call</span>
+                    <span class="btn-sub">30 minutes</span>
+                </a>
+
+            </div>
+
+            <p class="ty-back">
+                Prefer email? Reach us at <a href="mailto:hello@comaa.io">hello@comaa.io</a>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
