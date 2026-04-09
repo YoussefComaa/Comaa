@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Apply to Work With Us — Comaa</title>
+    <meta name="author" content="comaa.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Tell us about your business. If you're a good fit we'll send your payment link within 24 hours.">
+    <meta name="robots" content="noindex">
+
+    <!-- font -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/COMAA-logo.png" type="image/png">
+    <link rel="icon" href="assets/images/logo/COMAA-logo.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/Comaa-logo.png">
+
+    <style>
+        .q-wrap {
+            min-height: 100vh;
+            padding: 140px 0 100px;
+            position: relative;
+        }
+
+        .q-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 65% 30%, rgba(0,255,136,0.05) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .q-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #00ff88;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .q-title {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-weight: 600;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            margin-bottom: 14px;
+        }
+
+        .q-subtitle {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            max-width: 420px;
+        }
+
+        .q-form-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 48px;
+        }
+
+        @media (max-width: 767px) {
+            .q-form-card { padding: 28px 20px; }
+        }
+
+        .q-section-title {
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(0,255,136,0.6);
+            margin: 32px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .q-section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255,255,255,0.07);
+        }
+
+        .q-section-title:first-child { margin-top: 0; }
+
+        .q-field {
+            margin-bottom: 28px;
+        }
+
+        .q-field label {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.45);
+            margin-bottom: 8px;
+        }
+
+        .q-field label span { color: #00ff88; }
+
+        .q-input, .q-select, .q-textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            color: #fff;
+            font-size: 15px;
+            padding: 10px 0;
+            outline: none;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .q-input:focus, .q-select:focus, .q-textarea:focus {
+            border-bottom-color: #00ff88;
+        }
+
+        .q-input::placeholder, .q-textarea::placeholder {
+            color: rgba(255,255,255,0.18);
+        }
+
+        .q-select {
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+            color: rgba(255,255,255,0.55);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,0.35)' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 4px center;
+        }
+
+        .q-select option { background: #0a0a0a; color: #fff; }
+
+        .q-textarea {
+            resize: none;
+            min-height: 80px;
+        }
+
+        .q-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 40px;
+        }
+
+        @media (max-width: 575px) {
+            .q-row { grid-template-columns: 1fr; }
+        }
+
+        .q-submit {
+            cursor: pointer;
+            font-family: inherit;
+            margin-top: 8px;
+        }
+
+        /* Success state */
+        .q-success {
+            display: none;
+            text-align: center;
+            padding: 60px 40px;
+        }
+
+        .q-success.show { display: block; }
+        .q-form-inner.hide { display: none; }
+
+        .success-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(0,255,136,0.1);
+            border: 1px solid rgba(0,255,136,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 28px;
+        }
+
+        .success-title {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        .success-msg {
+            color: rgba(255,255,255,0.6);
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 420px;
+            margin: 0 auto 32px;
+        }
+
+        .q-note {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            margin-top: 16px;
+        }
+
+        .q-note a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="counter-scroll">
+    <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas>
+
+    <!-- Preloader -->
+    <div class="preloader overflow-hidden">
+        <div class="site-name"><span>COMAA</span></div>
+        <div class="preloader-gutters">
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+            <div class="bar"><div class="inner-bar"></div></div>
+        </div>
+    </div>
+
+    <main id="wrapper">
+
+        <!-- Header -->
+        <header class="tf-header">
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-1">
+                            <a href="index.html" class="logo-site">
+                                <img src="assets/images/logo/COMAA-logo.png" style="height:40px;">
+                            </a>
+                        </div>
+                        <div class="col-7 d-none d-md-block">
+                            <div class="box-navigation">
+                                <ul class="nav-menu-main">
+                                    <li class="menu-item"><a href="index.html#workScroll" class="item-link link text-caption"><span>01 /</span>WORKS</a></li>
+                                    <li class="menu-item"><a href="index.html#serviceScroll" class="item-link link text-caption"><span>02 /</span>SERVICES</a></li>
+                                    <li class="menu-item"><a href="index.html#aboutScroll" class="item-link link text-caption"><span>03 /</span>ABOUT</a></li>
+                                    <li class="menu-item"><a href="index.html#pricingScroll" class="item-link link text-caption"><span>04 /</span>PRICING</a></li>
+                                    <li class="menu-item"><a href="index.html#contactScroll" class="item-link link text-caption"><span>05 /</span>CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2 d-none d-sm-block">
+                            <div class="header-contact">
+                                <a href="mailto:hello@comaa.io" class="link text-caption">HELLO@COMAA.IO</a>
+                                <p class="text-caption">TIME MATTERS <span class="clock"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-2 d-flex justify-content-end align-items-start">
+                            <button type="button" class="btn-mobile-menu open-mb-menu text-caption text-white link">
+                                <i class="icon icon-menu"></i> MENU
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Questionnaire -->
+        <section class="q-wrap">
+            <div class="container">
+                <div class="row align-items-start g-5">
+
+                    <!-- Left -->
+                    <div class="col-lg-4">
+                        <span class="q-label">Application</span>
+                        <h1 class="q-title">Tell Us About Your Business<span class="text-primary">_</span></h1>
+                        <p class="q-subtitle">Fill in the details below. If you're a good fit, we'll send your payment link within 24 hours — no calls required.</p>
+                        <div class="br-line d-flex" style="margin-top:36px; max-width:180px;"></div>
+                        <p class="text-caption" style="color:rgba(255,255,255,0.35); margin-top:20px; line-height:1.9;">
+                            You only pay when qualified<br>prospects book meetings.
+                        </p>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="q-form-card">
+
+                            <!-- Success message -->
+                            <div class="q-success" id="qSuccess">
+                                <div class="success-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 12L10 17L19 7" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h2 class="success-title">You're in the queue<span class="text-primary">_</span></h2>
+                                <p class="success-msg">Thanks! We've received your details. If you're a good fit we'll send your payment link within 24 hours.</p>
+                                <a href="index.html" class="tf-btn style-fill animate-btn animate-dark">
+                                    <span class="text-caption fw-medium">BACK TO HOME</span>
+                                </a>
+                            </div>
+
+                            <!-- Form -->
+                            <div class="q-form-inner" id="qFormInner">
+                                <form id="qForm">
+
+                                    <p class="q-section-title">Your Details</p>
+
+                                    <div class="q-row">
+                                        <div class="q-field">
+                                            <label>Full Name <span>*</span></label>
+                                            <input class="q-input" type="text" name="full_name" required placeholder="John Smith">
+                                        </div>
+                                        <div class="q-field">
+                                            <label>Company Name <span>*</span></label>
+                                            <input class="q-input" type="text" name="company_name" required placeholder="Acme Inc.">
+                                        </div>
+                                    </div>
+
+                                    <div class="q-row">
+                                        <div class="q-field">
+                                            <label>Email <span>*</span></label>
+                                            <input class="q-input" type="email" name="email" required placeholder="john@acme.com">
+                                        </div>
+                                        <div class="q-field">
+                                            <label>Phone Number</label>
+                                            <input class="q-input" type="tel" name="phone" placeholder="+1 234 567 8900">
+                                        </div>
+                                    </div>
+
+                                    <div class="q-field">
+                                        <label>Website</label>
+                                        <input class="q-input" type="url" name="website" placeholder="https://yoursite.com">
+                                    </div>
+
+                                    <p class="q-section-title">Your Target Market</p>
+
+                                    <div class="q-row">
+                                        <div class="q-field">
+                                            <label>Target Industry <span>*</span></label>
+                                            <select class="q-select" name="target_industry" required>
+                                                <option value="" disabled selected>Select industry</option>
+                                                <option>SaaS / Software</option>
+                                                <option>E-commerce</option>
+                                                <option>Real Estate</option>
+                                                <option>Recruitment / Staffing</option>
+                                                <option>Marketing / Agency</option>
+                                                <option>Finance / Fintech</option>
+                                                <option>Healthcare</option>
+                                                <option>Professional Services</option>
+                                                <option>Manufacturing</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="q-field">
+                                            <label>Target Geography <span>*</span></label>
+                                            <select class="q-select" name="target_geography" required>
+                                                <option value="" disabled selected>Select region</option>
+                                                <option>UK</option>
+                                                <option>US</option>
+                                                <option>UAE</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="q-field">
+                                        <label>Ideal Client Description <span>*</span></label>
+                                        <textarea class="q-textarea" name="ideal_client" required placeholder="e.g. CEOs of B2B SaaS companies with 10-50 employees in the UK..."></textarea>
+                                    </div>
+
+                                    <p class="q-section-title">Your Goals</p>
+
+                                    <div class="q-row">
+                                        <div class="q-field">
+                                            <label>Average Deal Size <span>*</span></label>
+                                            <select class="q-select" name="deal_size" required>
+                                                <option value="" disabled selected>Select range</option>
+                                                <option>Under $1,000</option>
+                                                <option>$1,000 – $5,000</option>
+                                                <option>$5,000 – $20,000</option>
+                                                <option>$20,000 – $50,000</option>
+                                                <option>$50,000+</option>
+                                            </select>
+                                        </div>
+                                        <div class="q-field">
+                                            <label>Meetings per Month <span>*</span></label>
+                                            <select class="q-select" name="meetings_per_month" required>
+                                                <option value="" disabled selected>Select range</option>
+                                                <option>5 – 10 meetings/month</option>
+                                                <option>10 – 20 meetings/month</option>
+                                                <option>20 – 40 meetings/month</option>
+                                                <option>40+ meetings/month</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="q-field">
+                                        <label>Current Outreach Strategy</label>
+                                        <textarea class="q-textarea" name="current_strategy" placeholder="e.g. Cold calls, LinkedIn DMs, referrals..."></textarea>
+                                    </div>
+
+                                    <div class="q-field">
+                                        <label>How Did You Hear About Us?</label>
+                                        <select class="q-select" name="referral_source">
+                                            <option value="" disabled selected>Select source</option>
+                                            <option>Google Search</option>
+                                            <option>LinkedIn</option>
+                                            <option>Twitter / X</option>
+                                            <option>Referral</option>
+                                            <option>Cold Email</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div style="margin-top:36px;">
+                                        <button type="submit" id="qSubmitBtn" class="q-submit tf-btn style-fill animate-btn animate-dark">
+                                            <span class="text-caption fw-medium">SUBMIT APPLICATION</span>
+                                        </button>
+                                        <p class="q-note">
+                                            Want to talk first? <a href="https://calendly.com/youssef-comaa/30min" target="_blank">Book a call</a> or email <a href="mailto:hello@comaa.io">hello@comaa.io</a>
+                                        </p>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="tf-footer">
+            <div class="container"><div class="br-line"></div></div>
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="title text-has-dot text-caption fw-medium mb-md-0">
+                                <span class="br-dot"></span>WORKING GLOBALLY
+                            </p>
+                        </div>
+                        <div class="col-6 col-sm-2 col-md-1">
+                            <p class="footer-heading text-caption fw-medium text-white-64">SITEMAP</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <ul class="footer-menu-list mb-sm-0">
+                                <li><a href="index.html#aboutScroll" class="link letter-space--2 h5">About</a></li>
+                                <li><a href="index.html#serviceScroll" class="link letter-space--2 h5">Services</a></li>
+                                <li><a href="index.html#pricingScroll" class="link letter-space--2 h5">Pricing</a></li>
+                                <li><a href="index.html#contactScroll" class="link letter-space--2 h5">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-2 col-md-1">
+                            <p class="footer-heading text-caption fw-medium text-white-64">SOCIALS</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <ul class="footer-menu-list mb-0">
+                                <li><a href="#" class="link letter-space--2 h5">Twitter (X)</a></li>
+                                <li><a href="#" class="link letter-space--2 h5">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="bottom">
+                        <p class="text-nocopy text-caption fw-medium letter-space--1">© COMAA LTD</p>
+                        <a href="#" class="action-go-top tf-link-icon link text-caption fw-medium letter-space--1">
+                            BACK TO TOP <i class="icon icon-arrow-long-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/gsapAnimation.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.getElementById('qForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('qSubmitBtn');
+            btn.disabled = true;
+            btn.querySelector('span').textContent = 'SENDING...';
+
+            const data = new FormData(this);
+
+            try {
+                const res = await fetch('https://formspree.io/f/xwvwyvgw', {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (res.ok) {
+                    document.getElementById('qFormInner').classList.add('hide');
+                    document.getElementById('qSuccess').classList.add('show');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    btn.disabled = false;
+                    btn.querySelector('span').textContent = 'SUBMIT APPLICATION';
+                    alert('Something went wrong. Please try again or email hello@comaa.io');
+                }
+            } catch (err) {
+                btn.disabled = false;
+                btn.querySelector('span').textContent = 'SUBMIT APPLICATION';
+                alert('Something went wrong. Please try again or email hello@comaa.io');
+            }
+        });
+    </script>
+
+</body>
+</html>
