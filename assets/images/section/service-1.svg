@@ -1,71 +1,162 @@
 <svg width="424" height="530" viewBox="0 0 424 530" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="424" height="530" fill="#080808"/>
 
-  <!-- Grid dots -->
-  <pattern id="dots1" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.06)"/>
-  </pattern>
-  <rect width="424" height="530" fill="url(#dots1)"/>
+  <!-- Ambient glow -->
+  <ellipse cx="212" cy="290" rx="180" ry="140" fill="rgba(0,255,136,0.04)"/>
 
-  <!-- Glow -->
-  <ellipse cx="212" cy="265" rx="160" ry="160" fill="rgba(0,255,136,0.04)"/>
-  <ellipse cx="212" cy="265" rx="90" ry="90" fill="rgba(0,255,136,0.06)"/>
+  <!-- Drop shadow under laptop -->
+  <ellipse cx="212" cy="468" rx="155" ry="10" fill="rgba(0,0,0,0.6)"/>
 
-  <!-- Envelope body -->
-  <rect x="82" y="180" width="260" height="175" rx="6" fill="#0f0f0f" stroke="#00ff88" stroke-width="1.5"/>
+  <!-- ======= LAPTOP LID ======= -->
+  <!-- Outer lid frame - space grey -->
+  <rect x="42" y="52" width="340" height="218" rx="10" fill="#1c1c1e"/>
+  <!-- Lid edge highlight top -->
+  <rect x="42" y="52" width="340" height="3" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <!-- Lid edge sides -->
+  <rect x="42" y="52" width="2" height="218" rx="1" fill="rgba(255,255,255,0.05)"/>
+  <rect x="380" y="52" width="2" height="218" rx="1" fill="rgba(255,255,255,0.03)"/>
 
-  <!-- Envelope flap lines (V shape) -->
-  <polyline points="82,180 212,275 342,180" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <!-- Screen bezel (inner black) -->
+  <rect x="52" y="60" width="320" height="202" rx="7" fill="#0a0a0a"/>
 
-  <!-- Envelope bottom fold lines -->
-  <line x1="82" y1="355" x2="162" y2="280" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
-  <line x1="342" y1="355" x2="262" y2="280" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+  <!-- Notch -->
+  <rect x="188" y="60" width="48" height="12" rx="0 0 6 6" fill="#1c1c1e"/>
+  <circle cx="212" cy="65" r="2.5" fill="#2a2a2a"/>
+  <circle cx="212" cy="65" r="1.2" fill="#1a1a1a"/>
 
-  <!-- Glow on envelope -->
-  <rect x="82" y="180" width="260" height="175" rx="6" fill="none" stroke="rgba(0,255,136,0.15)" stroke-width="12"/>
+  <!-- ======= SCREEN CONTENT — Email Composer ======= -->
+  <!-- Screen background -->
+  <rect x="52" y="72" width="320" height="190" fill="#0d0d0d"/>
 
-  <!-- Profile card 1 - top left -->
-  <rect x="44" y="108" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
-  <circle cx="64" cy="130" r="10" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
-  <line x1="82" y1="126" x2="118" y2="126" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="82" y1="133" x2="108" y2="133" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="64" cy="130" r="4" fill="#00ff88"/>
-  <!-- Connecting line to envelope -->
-  <line x1="134" y1="136" x2="152" y2="185" stroke="rgba(0,255,136,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Top bar -->
+  <rect x="52" y="72" width="320" height="28" fill="#141414"/>
+  <circle cx="70" cy="86" r="4.5" fill="#ff5f57"/>
+  <circle cx="84" cy="86" r="4.5" fill="#ffbd2e"/>
+  <circle cx="98" cy="86" r="4.5" fill="#28c840"/>
+  <rect x="140" y="80" width="144" height="12" rx="6" fill="#1e1e1e"/>
+  <text x="212" y="90" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.4)" text-anchor="middle">New Message</text>
 
-  <!-- Profile card 2 - top right -->
-  <rect x="290" y="95" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
-  <circle cx="310" cy="117" r="10" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
-  <line x1="328" y1="113" x2="364" y2="113" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="328" y1="120" x2="354" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="310" cy="117" r="4" fill="#00ff88"/>
-  <!-- Connecting line to envelope -->
-  <line x1="290" y1="123" x2="272" y2="185" stroke="rgba(0,255,136,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Sidebar -->
+  <rect x="52" y="100" width="68" height="162" fill="#111"/>
+  <!-- Sidebar items -->
+  <rect x="58" y="108" width="56" height="22" rx="4" fill="rgba(0,255,136,0.12)"/>
+  <text x="86" y="123" font-family="-apple-system, sans-serif" font-size="7" fill="#00ff88" text-anchor="middle">✉ Compose</text>
+  <rect x="60" y="136" width="40" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <rect x="60" y="148" width="50" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="60" y="160" width="44" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="60" y="172" width="48" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="60" y="184" width="42" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <!-- Sidebar badge -->
+  <rect x="104" y="148" width="14" height="9" rx="4" fill="#00ff88"/>
+  <text x="111" y="156" font-family="-apple-system, sans-serif" font-size="6" fill="#000" text-anchor="middle">12</text>
 
-  <!-- Profile card 3 - bottom left -->
-  <rect x="30" y="370" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
-  <circle cx="50" cy="392" r="10" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
-  <line x1="68" y1="388" x2="104" y2="388" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="68" y1="395" x2="94" y2="395" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="50" cy="392" r="4" fill="rgba(0,255,136,0.6)"/>
-  <line x1="120" y1="370" x2="145" y2="355" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Compose area -->
+  <rect x="120" y="100" width="252" height="162" fill="#0d0d0d"/>
 
-  <!-- Profile card 4 - bottom right -->
-  <rect x="304" y="370" width="90" height="56" rx="4" fill="#111" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
-  <circle cx="324" cy="392" r="10" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
-  <line x1="342" y1="388" x2="378" y2="388" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="342" y1="395" x2="368" y2="395" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="324" cy="392" r="4" fill="rgba(0,255,136,0.6)"/>
-  <line x1="304" y1="370" x2="279" y2="355" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- To field -->
+  <rect x="126" y="106" width="240" height="18" rx="0" fill="transparent"/>
+  <text x="130" y="118" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">To:</text>
+  <!-- Recipient chip -->
+  <rect x="146" y="109" width="78" height="12" rx="6" fill="rgba(0,255,136,0.12)" stroke="rgba(0,255,136,0.3)" stroke-width="0.5"/>
+  <text x="185" y="118" font-family="-apple-system, sans-serif" font-size="6.5" fill="#00ff88" text-anchor="middle">alex@techcorp.io</text>
+  <line x1="126" y1="124" x2="366" y2="124" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
 
-  <!-- @ symbol inside envelope -->
-  <text x="212" y="285" font-family="monospace" font-size="36" fill="#00ff88" text-anchor="middle" opacity="0.9">@</text>
+  <!-- Subject field -->
+  <text x="130" y="135" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">Subject:</text>
+  <text x="166" y="135" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.7)">Quick question about </text>
+  <!-- Personalized variable -->
+  <rect x="285" y="127" width="48" height="11" rx="2" fill="rgba(0,255,136,0.15)"/>
+  <text x="309" y="135" font-family="-apple-system, sans-serif" font-size="6.5" fill="#00ff88" text-anchor="middle">{company}</text>
+  <line x1="126" y1="141" x2="366" y2="141" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
 
-  <!-- Checkmark badge -->
-  <circle cx="310" cy="185" r="14" fill="#080808" stroke="#00ff88" stroke-width="1.5"/>
-  <polyline points="303,185 308,191 318,179" fill="none" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Email body -->
+  <text x="130" y="155" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Hi</text>
+  <rect x="142" y="147" width="36" height="11" rx="2" fill="rgba(0,255,136,0.15)"/>
+  <text x="160" y="155" font-family="-apple-system, sans-serif" font-size="6.5" fill="#00ff88" text-anchor="middle">{first_name}</text>
+  <text x="182" y="155" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">, I came across</text>
 
-  <!-- Label -->
-  <rect x="132" y="456" width="160" height="28" rx="4" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.2)" stroke-width="1"/>
-  <text x="212" y="475" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle" letter-spacing="2">PERSONALIZED</text>
+  <text x="130" y="167" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">your work at</text>
+  <rect x="192" y="159" width="36" height="11" rx="2" fill="rgba(0,255,136,0.15)"/>
+  <text x="210" y="167" font-family="-apple-system, sans-serif" font-size="6.5" fill="#00ff88" text-anchor="middle">{company}</text>
+  <text x="232" y="167" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">and noticed</text>
+
+  <text x="130" y="179" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">you're hiring for</text>
+  <rect x="210" y="171" width="48" height="11" rx="2" fill="rgba(0,255,136,0.15)"/>
+  <text x="234" y="179" font-family="-apple-system, sans-serif" font-size="6.5" fill="#00ff88" text-anchor="middle">{job_title}</text>
+  <text x="262" y="179" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">roles.</text>
+
+  <text x="130" y="194" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.3)">We help companies like yours book qualified meetings...</text>
+
+  <!-- Toolbar -->
+  <rect x="120" y="240" width="252" height="22" fill="#111"/>
+  <text x="130" y="254" font-family="-apple-system, sans-serif" font-size="8" fill="rgba(255,255,255,0.3)">B  I  U  ≡</text>
+  <!-- Send button -->
+  <rect x="314" y="243" width="50" height="16" rx="4" fill="#00ff88"/>
+  <text x="339" y="254" font-family="-apple-system, sans-serif" font-size="7" fill="#000" text-anchor="middle" font-weight="600">Send ↑</text>
+
+  <!-- ======= HINGE ======= -->
+  <rect x="36" y="270" width="352" height="8" rx="0" fill="#111"/>
+  <rect x="36" y="270" width="352" height="2" fill="#222"/>
+  <rect x="36" y="276" width="352" height="2" fill="#0a0a0a"/>
+
+  <!-- ======= KEYBOARD BASE ======= -->
+  <rect x="28" y="278" width="368" height="108" rx="0 0 12 12" fill="#1c1c1e"/>
+  <!-- Base highlight -->
+  <rect x="28" y="278" width="368" height="1" fill="rgba(255,255,255,0.06)"/>
+  <!-- Base bottom edge -->
+  <rect x="28" y="384" width="368" height="2" rx="1" fill="#111"/>
+
+  <!-- Keyboard keys row 1 -->
+  <rect x="50" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="72" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="94" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="116" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="138" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="160" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="182" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="204" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="226" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="248" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="270" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="292" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="314" y="288" width="28" height="10" rx="2" fill="#262626"/>
+
+  <!-- Keyboard keys row 2 -->
+  <rect x="50" y="302" width="26" height="10" rx="2" fill="#262626"/>
+  <rect x="80" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="102" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="124" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="146" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="168" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="190" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="212" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="234" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="256" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="278" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="300" y="302" width="42" height="10" rx="2" fill="#262626"/>
+
+  <!-- Keyboard keys row 3 -->
+  <rect x="50" y="316" width="30" height="10" rx="2" fill="#262626"/>
+  <rect x="84" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="106" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="128" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="150" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="172" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="194" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="216" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="238" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="260" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="282" y="316" width="60" height="10" rx="2" fill="#262626"/>
+
+  <!-- Space bar row -->
+  <rect x="50" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="76" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="102" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="128" y="330" width="140" height="10" rx="2" fill="#2a2a2a"/>
+  <rect x="272" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="298" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="324" y="330" width="18" height="10" rx="2" fill="#262626"/>
+
+  <!-- Trackpad -->
+  <rect x="162" y="348" width="100" height="62" rx="6" fill="#212121" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
 </svg>

@@ -1,83 +1,175 @@
 <svg width="424" height="530" viewBox="0 0 424 530" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="424" height="530" fill="#080808"/>
 
-  <!-- Grid dots -->
-  <pattern id="dots2" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.06)"/>
-  </pattern>
-  <rect width="424" height="530" fill="url(#dots2)"/>
+  <!-- Ambient glow -->
+  <ellipse cx="212" cy="290" rx="180" ry="140" fill="rgba(0,255,136,0.04)"/>
 
-  <!-- Outer glow -->
-  <ellipse cx="212" cy="255" rx="150" ry="150" fill="rgba(0,255,136,0.04)"/>
+  <!-- Drop shadow -->
+  <ellipse cx="212" cy="468" rx="155" ry="10" fill="rgba(0,0,0,0.6)"/>
 
-  <!-- Connection lines from outer nodes to center -->
-  <line x1="80" y1="130" x2="212" y2="255" stroke="rgba(0,255,136,0.25)" stroke-width="1" stroke-dasharray="5,4"/>
-  <line x1="344" y1="130" x2="212" y2="255" stroke="rgba(0,255,136,0.25)" stroke-width="1" stroke-dasharray="5,4"/>
-  <line x1="60" y1="290" x2="212" y2="255" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="5,4"/>
-  <line x1="364" y1="290" x2="212" y2="255" stroke="rgba(0,255,136,0.2)" stroke-width="1" stroke-dasharray="5,4"/>
-  <line x1="120" y1="400" x2="212" y2="255" stroke="rgba(0,255,136,0.15)" stroke-width="1" stroke-dasharray="5,4"/>
-  <line x1="304" y1="400" x2="212" y2="255" stroke="rgba(0,255,136,0.15)" stroke-width="1" stroke-dasharray="5,4"/>
-  <line x1="212" y1="96" x2="212" y2="255" stroke="rgba(0,255,136,0.25)" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- ======= LAPTOP LID ======= -->
+  <rect x="42" y="52" width="340" height="218" rx="10" fill="#1c1c1e"/>
+  <rect x="42" y="52" width="340" height="3" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="42" y="52" width="2" height="218" rx="1" fill="rgba(255,255,255,0.05)"/>
+  <rect x="380" y="52" width="2" height="218" rx="1" fill="rgba(255,255,255,0.03)"/>
+  <rect x="52" y="60" width="320" height="202" rx="7" fill="#0a0a0a"/>
+  <!-- Notch -->
+  <rect x="188" y="60" width="48" height="12" rx="0 0 6 6" fill="#1c1c1e"/>
+  <circle cx="212" cy="65" r="2.5" fill="#2a2a2a"/>
+  <circle cx="212" cy="65" r="1.2" fill="#1a1a1a"/>
 
-  <!-- Central hub -->
-  <circle cx="212" cy="255" r="52" fill="#0a0a0a" stroke="#00ff88" stroke-width="1.5"/>
-  <circle cx="212" cy="255" r="52" fill="rgba(0,255,136,0.05)"/>
-  <circle cx="212" cy="255" r="36" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+  <!-- ======= SCREEN CONTENT — CRM Dashboard ======= -->
+  <rect x="52" y="72" width="320" height="190" fill="#0c0c0c"/>
 
-  <!-- Target/crosshair in center -->
-  <line x1="192" y1="255" x2="200" y2="255" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="224" y1="255" x2="232" y2="255" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="212" y1="235" x2="212" y2="243" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="212" y1="267" x2="212" y2="275" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="212" cy="255" r="10" fill="none" stroke="#00ff88" stroke-width="1.5"/>
-  <circle cx="212" cy="255" r="3" fill="#00ff88"/>
+  <!-- Top bar -->
+  <rect x="52" y="72" width="320" height="26" fill="#131313"/>
+  <circle cx="70" cy="85" r="4.5" fill="#ff5f57"/>
+  <circle cx="84" cy="85" r="4.5" fill="#ffbd2e"/>
+  <circle cx="98" cy="85" r="4.5" fill="#28c840"/>
+  <!-- Nav items -->
+  <text x="130" y="89" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">Dashboard</text>
+  <text x="184" y="89" font-family="-apple-system, sans-serif" font-size="7" fill="#00ff88">Leads</text>
+  <text x="214" y="89" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">Campaigns</text>
+  <text x="268" y="89" font-family="-apple-system, sans-serif" font-size="7" fill="rgba(255,255,255,0.35)">Reports</text>
+  <!-- Active underline -->
+  <line x1="183" y1="98" x2="209" y2="98" stroke="#00ff88" stroke-width="1.5"/>
 
-  <!-- Outer node 1 - top center -->
-  <circle cx="212" cy="96" r="22" fill="#0f0f0f" stroke="rgba(0,255,136,0.5)" stroke-width="1.5"/>
-  <circle cx="212" cy="91" r="7" fill="rgba(0,255,136,0.2)" stroke="#00ff88" stroke-width="1"/>
-  <path d="M200,108 Q212,102 224,108" fill="none" stroke="#00ff88" stroke-width="1"/>
+  <!-- Sidebar -->
+  <rect x="52" y="98" width="56" height="164" fill="#101010"/>
+  <rect x="55" y="106" width="50" height="20" rx="3" fill="rgba(0,255,136,0.1)"/>
+  <text x="80" y="119" font-family="-apple-system, sans-serif" font-size="6.5" fill="#00ff88" text-anchor="middle">⊞ Pipeline</text>
+  <rect x="57" y="130" width="38" height="6" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="57" y="142" width="44" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="57" y="154" width="36" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="57" y="166" width="42" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="57" y="178" width="38" height="6" rx="2" fill="rgba(255,255,255,0.07)"/>
 
-  <!-- Outer node 2 - top left -->
-  <circle cx="80" cy="130" r="22" fill="#0f0f0f" stroke="rgba(0,255,136,0.5)" stroke-width="1.5"/>
-  <circle cx="80" cy="125" r="7" fill="rgba(0,255,136,0.2)" stroke="#00ff88" stroke-width="1"/>
-  <path d="M68,142 Q80,136 92,142" fill="none" stroke="#00ff88" stroke-width="1"/>
+  <!-- Main content area -->
+  <rect x="108" y="98" width="264" height="164" fill="#0c0c0c"/>
 
-  <!-- Outer node 3 - top right -->
-  <circle cx="344" cy="130" r="22" fill="#0f0f0f" stroke="rgba(0,255,136,0.5)" stroke-width="1.5"/>
-  <circle cx="344" cy="125" r="7" fill="rgba(0,255,136,0.2)" stroke="#00ff88" stroke-width="1"/>
-  <path d="M332,142 Q344,136 356,142" fill="none" stroke="#00ff88" stroke-width="1"/>
+  <!-- Stats row -->
+  <rect x="112" y="103" width="58" height="34" rx="3" fill="#141414" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="122" y="114" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.4)">LEADS</text>
+  <text x="122" y="127" font-family="-apple-system, sans-serif" font-size="11" fill="#00ff88" font-weight="700">8,420</text>
 
-  <!-- Outer node 4 - left -->
-  <circle cx="60" cy="290" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.35)" stroke-width="1"/>
-  <circle cx="60" cy="286" r="5" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.6)" stroke-width="1"/>
-  <path d="M51,297 Q60,293 69,297" fill="none" stroke="rgba(0,255,136,0.7)" stroke-width="1"/>
+  <rect x="174" y="103" width="58" height="34" rx="3" fill="#141414" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="184" y="114" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.4)">OPEN RATE</text>
+  <text x="184" y="127" font-family="-apple-system, sans-serif" font-size="11" fill="#00ff88" font-weight="700">42%</text>
 
-  <!-- Outer node 5 - right -->
-  <circle cx="364" cy="290" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.35)" stroke-width="1"/>
-  <circle cx="364" cy="286" r="5" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.6)" stroke-width="1"/>
-  <path d="M355,297 Q364,293 373,297" fill="none" stroke="rgba(0,255,136,0.7)" stroke-width="1"/>
+  <rect x="236" y="103" width="58" height="34" rx="3" fill="#141414" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="246" y="114" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.4)">REPLIES</text>
+  <text x="246" y="127" font-family="-apple-system, sans-serif" font-size="11" fill="#00ff88" font-weight="700">18%</text>
 
-  <!-- Outer node 6 - bottom left -->
-  <circle cx="120" cy="400" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
-  <circle cx="120" cy="396" r="5" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
-  <path d="M111,407 Q120,403 129,407" fill="none" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
+  <rect x="298" y="103" width="70" height="34" rx="3" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.25)" stroke-width="0.5"/>
+  <text x="308" y="114" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(0,255,136,0.7)">MEETINGS</text>
+  <text x="308" y="127" font-family="-apple-system, sans-serif" font-size="11" fill="#00ff88" font-weight="700">127</text>
 
-  <!-- Outer node 7 - bottom right -->
-  <circle cx="304" cy="400" r="18" fill="#0f0f0f" stroke="rgba(0,255,136,0.25)" stroke-width="1"/>
-  <circle cx="304" cy="396" r="5" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.4)" stroke-width="1"/>
-  <path d="M295,407 Q304,403 313,407" fill="none" stroke="rgba(0,255,136,0.5)" stroke-width="1"/>
+  <!-- Table header -->
+  <rect x="112" y="142" width="256" height="14" rx="0" fill="#141414"/>
+  <text x="118" y="152" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.3)" letter-spacing="0.5">NAME</text>
+  <text x="186" y="152" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.3)" letter-spacing="0.5">COMPANY</text>
+  <text x="248" y="152" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.3)" letter-spacing="0.5">STATUS</text>
+  <text x="310" y="152" font-family="-apple-system, sans-serif" font-size="6" fill="rgba(255,255,255,0.3)" letter-spacing="0.5">SCORE</text>
 
-  <!-- Pulse rings on center -->
-  <circle cx="212" cy="255" r="68" fill="none" stroke="rgba(0,255,136,0.08)" stroke-width="1"/>
-  <circle cx="212" cy="255" r="84" fill="none" stroke="rgba(0,255,136,0.05)" stroke-width="1"/>
+  <!-- Table rows -->
+  <!-- Row 1 -->
+  <rect x="112" y="156" width="256" height="15" fill="rgba(0,255,136,0.04)"/>
+  <circle cx="122" cy="163" r="4" fill="rgba(0,255,136,0.2)"/>
+  <text x="130" y="167" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.75)">Alex Morgan</text>
+  <text x="186" y="167" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.5)">TechCorp Ltd</text>
+  <rect x="248" y="159" width="34" height="9" rx="4" fill="rgba(0,255,136,0.15)"/>
+  <text x="265" y="166" font-family="-apple-system, sans-serif" font-size="5.5" fill="#00ff88" text-anchor="middle">Replied ✓</text>
+  <rect x="310" y="160" width="28" height="7" rx="2" fill="rgba(0,255,136,0.1)"/>
+  <rect x="310" y="160" width="22" height="7" rx="2" fill="rgba(0,255,136,0.5)"/>
 
-  <!-- Stats floating -->
-  <rect x="148" y="440" width="128" height="26" rx="4" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.2)" stroke-width="1"/>
-  <text x="212" y="458" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle" letter-spacing="2">SCALE</text>
+  <!-- Row 2 -->
+  <rect x="112" y="171" width="256" height="15" fill="transparent"/>
+  <circle cx="122" cy="178" r="4" fill="rgba(255,255,255,0.08)"/>
+  <text x="130" y="182" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.55)">Sarah Chen</text>
+  <text x="186" y="182" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.35)">Nexus SaaS</text>
+  <rect x="248" y="174" width="34" height="9" rx="4" fill="rgba(255,180,0,0.1)"/>
+  <text x="265" y="181" font-family="-apple-system, sans-serif" font-size="5.5" fill="rgba(255,180,0,0.8)" text-anchor="middle">Opened</text>
+  <rect x="310" y="175" width="28" height="7" rx="2" fill="rgba(0,255,136,0.1)"/>
+  <rect x="310" y="175" width="18" height="7" rx="2" fill="rgba(0,255,136,0.35)"/>
 
-  <!-- Small dots on lines (animated feel) -->
-  <circle cx="146" cy="192" r="3" fill="#00ff88" opacity="0.7"/>
-  <circle cx="278" cy="192" r="3" fill="#00ff88" opacity="0.7"/>
-  <circle cx="136" cy="227" r="2" fill="#00ff88" opacity="0.4"/>
-  <circle cx="288" cy="227" r="2" fill="#00ff88" opacity="0.4"/>
+  <!-- Row 3 -->
+  <rect x="112" y="186" width="256" height="15" fill="rgba(0,255,136,0.02)"/>
+  <circle cx="122" cy="193" r="4" fill="rgba(0,255,136,0.15)"/>
+  <text x="130" y="197" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.55)">James Park</text>
+  <text x="186" y="197" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.35)">BuildFast</text>
+  <rect x="248" y="189" width="34" height="9" rx="4" fill="rgba(0,255,136,0.15)"/>
+  <text x="265" y="196" font-family="-apple-system, sans-serif" font-size="5.5" fill="#00ff88" text-anchor="middle">Meeting ✓</text>
+  <rect x="310" y="190" width="28" height="7" rx="2" fill="rgba(0,255,136,0.1)"/>
+  <rect x="310" y="190" width="26" height="7" rx="2" fill="rgba(0,255,136,0.6)"/>
+
+  <!-- Row 4 -->
+  <rect x="112" y="201" width="256" height="15" fill="transparent"/>
+  <circle cx="122" cy="208" r="4" fill="rgba(255,255,255,0.06)"/>
+  <text x="130" y="212" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.4)">Emma Wilson</text>
+  <text x="186" y="212" font-family="-apple-system, sans-serif" font-size="6.5" fill="rgba(255,255,255,0.25)">Scale.io</text>
+  <rect x="248" y="204" width="34" height="9" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <text x="265" y="211" font-family="-apple-system, sans-serif" font-size="5.5" fill="rgba(255,255,255,0.3)" text-anchor="middle">Sent</text>
+  <rect x="310" y="205" width="28" height="7" rx="2" fill="rgba(0,255,136,0.08)"/>
+  <rect x="310" y="205" width="10" height="7" rx="2" fill="rgba(0,255,136,0.25)"/>
+
+  <!-- ======= HINGE ======= -->
+  <rect x="36" y="270" width="352" height="8" rx="0" fill="#111"/>
+  <rect x="36" y="270" width="352" height="2" fill="#222"/>
+  <rect x="36" y="276" width="352" height="2" fill="#0a0a0a"/>
+
+  <!-- ======= KEYBOARD BASE ======= -->
+  <rect x="28" y="278" width="368" height="108" rx="0 0 12 12" fill="#1c1c1e"/>
+  <rect x="28" y="278" width="368" height="1" fill="rgba(255,255,255,0.06)"/>
+  <rect x="28" y="384" width="368" height="2" rx="1" fill="#111"/>
+
+  <!-- Keys row 1 -->
+  <rect x="50" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="72" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="94" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="116" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="138" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="160" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="182" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="204" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="226" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="248" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="270" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="292" y="288" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="314" y="288" width="28" height="10" rx="2" fill="#262626"/>
+  <!-- Keys row 2 -->
+  <rect x="50" y="302" width="26" height="10" rx="2" fill="#262626"/>
+  <rect x="80" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="102" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="124" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="146" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="168" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="190" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="212" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="234" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="256" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="278" y="302" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="300" y="302" width="42" height="10" rx="2" fill="#262626"/>
+  <!-- Keys row 3 -->
+  <rect x="50" y="316" width="30" height="10" rx="2" fill="#262626"/>
+  <rect x="84" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="106" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="128" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="150" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="172" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="194" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="216" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="238" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="260" y="316" width="18" height="10" rx="2" fill="#262626"/>
+  <rect x="282" y="316" width="60" height="10" rx="2" fill="#262626"/>
+  <!-- Space bar -->
+  <rect x="50" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="76" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="102" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="128" y="330" width="140" height="10" rx="2" fill="#2a2a2a"/>
+  <rect x="272" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="298" y="330" width="22" height="10" rx="2" fill="#262626"/>
+  <rect x="324" y="330" width="18" height="10" rx="2" fill="#262626"/>
+
+  <!-- Trackpad -->
+  <rect x="162" y="348" width="100" height="62" rx="6" fill="#212121" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
 </svg>
